@@ -1,0 +1,29 @@
+{
+  "animals": [
+    {
+      "id": 1,
+      "name": "Panther",
+      "type": "Cat"
+    },
+    {
+      "id": 2,
+      "name": "Tiger",
+      "type": "Cat"
+    },
+    {
+      "id": 3,
+      "name": "Lion",
+      "type": "Cat"
+    },
+    {
+      "id": 4,
+      "name": "Wolf",
+      "type": "Dog"
+    },
+    {
+      "id": 5,
+      "name": "mouse",
+      "type": "Dog"
+    }
+  ]
+}

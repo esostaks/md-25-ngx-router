@@ -1,0 +1,17 @@
+<div>
+    <div>
+        <nav >
+            <a routerLink="/">Animals <br></a>
+            <a routerLink="/books">Books</a>
+        </nav>
+    </div>
+    <div
+  *ngFor="let book of books"
+>
+  <p>{{book.volumeInfo.title}}</p><span> by {{book.volumeInfo.authors}}</span>
+  <button
+    (click)="add.emit(book.id)"
+    data-test="add-button"
+  >Add to Collection</button>
+</div>
+</div>

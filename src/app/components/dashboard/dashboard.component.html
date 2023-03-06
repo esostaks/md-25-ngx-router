@@ -1,0 +1,21 @@
+<div class="container">
+    <nav class="navigation">
+        <a routerLink="/">Animals <br></a>
+        <a routerLink="/books">Books</a>
+    </nav>
+    <form class="form" (submit)="addAnimal()">
+        <input class="form__name" name="name" placeholder='Enter animal' required [(ngModel)]="addAnimalName">
+        <select class="form__type"  name="animals" required [(ngModel)]="addAnimalType">
+            <option value="Cat">Cat</option>
+            <option value="Dog">Dog</option>
+        </select>
+        <button class="button__add">+</button>
+    </form>
+    <div class="card__container" *ngFor="let animal of animalArr">
+        <div class="card">
+            <span>{{animal.type}}</span>
+            <span>{{animal.name}}</span>
+            <button class="button__delete" (click)="deleteAnimal(animal)">X</button>
+        </div>
+    </div>
+</div>
